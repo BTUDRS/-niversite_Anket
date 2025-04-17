@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstanbul Aydın Üniversitesi Öğrenci Durum Değerlendirme Anketi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="iau-logo.png" alt="İstanbul Aydın Üniversitesi Logosu">
+        </div>
+        <h1>Öğrenci Durum Değerlendirme Anketi</h1>
+    </header>
+
+    <main>
+        <div id="giris-formu">
+            <h2>Giriş Bilgileri</h2>
+            <label for="ad">Ad:</label>
+            <input type="text" id="ad" required><br><br>
+            <label for="soyad">Soyad:</label>
+            <input type="text" id="soyad" required><br><br>
+            <label for="sehir">Şehir:</label>
+            <input type="text" id="sehir" required><br><br>
+            <button onclick="baslatAnket()">Ankete Başla</button>
+        </div>
+
+        <div id="anket-alani" style="display: none;">
+            <form id="anket-formu">
+                </form>
+            <button onclick="sonuclariGoster()">Sonuçları Göster</button>
+        </div>
+
+        <div id="sonuc-alani" style="display: none;">
+            <h2>Anket Sonuçları</h2>
+            <div id="sonuclar"></div>
+            <button onclick="tekrarAnket()">Tekrar Anket Yap</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© İstanbul Aydın Üniversitesi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
